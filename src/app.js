@@ -25,20 +25,20 @@ app.use(express.static(publicDir))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'vsiddardha@qualys.com'
+        name: 'Sai Siddardha Voruganti'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        name: 'vsiddardha@qualys.com',
+        name: 'Sai Siddardha Voruganti',
         title: "About"
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        name: 'vsiddardha@qualys.com',
+        name: 'Sai Siddardha Voruganti',
         title: "Help"
     })
 })
@@ -87,7 +87,7 @@ app.get('/products', (req, res) => {
 
 app.get('/help/*', (req, res) => {
     res.render('404', {
-        name: 'vsiddardha@qualys.com',
+        name: 'Sai Siddardha Voruganti',
         title: "404",
         errorMessage: "Help article not found"
     })
@@ -95,7 +95,7 @@ app.get('/help/*', (req, res) => {
 
 app.get('*', (req, res) => {
     res.render('404', {
-        name: 'vsiddardha@qualys.com',
+        name: 'Sai Siddardha Voruganti',
         title: "404",
         errorMessage: 'Page not found'
     })
